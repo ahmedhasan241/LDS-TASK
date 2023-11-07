@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-black">
+    <!-- Nav Bar  -->
+    <div class="d-none d-lg-block">
+      <nav style="border-top: 1px inset rgb(202, 171, 119)" class="mt-3">
+        <ul
+          class="nav bg-black justify-content-center align-items-center d-none d-lg-flex"
+          style="height: 65px"
+        >
+          <div class="drop-down">
+            <div class="wrapper">
+              <img src="/images/USA.png" alt="" class="selectedImg" />
+            </div>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+            <div class="list">
+              <div class="item">
+                <img src="/images/USA.png" alt="" />
+              </div>
+              <div class="item">
+                <img src="/images/ARE.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">OUR TEAM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PLASTIC SURGERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">AESTHETICS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">GYNECOLOGY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ANDROLOGY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">HAIR TRANSPLANT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACTS</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- moblie nav -->
+    <nav
+      class="bg-black d-lg-none d-flex align-items-center justify-content-evenly"
+      style="height: 10vh; border-top: 1px solid black"
+    >
+      <img
+        src="https://static.wixstatic.com/media/2e87f1_12b615ea6a45404c9c1c9074b0e69fd4~mv2.png/v1/crop/x_5,y_0,w_1074,h_221/fill/w_1045,h_215,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/New%252520Project%252520(2)_edited_edited_pn.png"
+        alt="Dubai Plastic Surgery - Highnessclinics"
+        style="width: 75%; height: 100%"
+        srcset="
+          https://static.wixstatic.com/media/2e87f1_12b615ea6a45404c9c1c9074b0e69fd4~mv2.png/v1/crop/x_5,y_0,w_1074,h_221/fill/w_1289,h_265,al_c,lg_1,q_85,enc_auto/New%252520Project%252520(2)_edited_edited_pn.png
+        "
+        fetchpriority="high"
+      />
+
+      <button
+        class="btn align-self-center my-5"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#staticBackdrop"
+        aria-controls="staticBackdrop"
+      >
+        <span class="hamburger-top mt-3"></span>
+        <span class="hamburger-middle mt-3"></span>
+        <span class="hamburger-bottom mt-3"></span>
+      </button>
+
+      <div
+        class="offcanvas offcanvas-end bg-black"
+        data-bs-backdrop="static"
+        tabindex="-1"
+        id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel"
+      >
+        <div class="offcanvas-header">
+          <h6 class="offcanvas-title" id="staticBackdropLabel"></h6>
+          <button
+            type="button"
+            class="btn-close mx-4 mt-1"
+            data-bs-dismiss="offcanvas"
+          >
+            <i class="fa-solid fa-xmark fs-1" style="color: #dcbc84"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body text-start" style="color: #dcbc84">
+          <a href="#" class="list-group-item active mt-2 mx-auto">
+            The current link item
+          </a>
+          <a href="#" class="list-group-item mt-2 mx-auto"
+            >A second link item</a
+          >
+          <a href="#" class="list-group-item mt-2 mx-auto">A third link item</a>
+          <a href="#" class="list-group-item mt-2" mt-2 mx-auto
+            >A fourth link item</a
+          >
+          <div
+            class="accordion-item mt-2 mx-auto text-center items-content-center"
+          >
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+                style="color: #dcbc84"
+              >
+                Accordion Item #2
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <ul class="list-group nav flex flex-row">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">OUR TEAM</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PLASTIC SURGERY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">AESTHETICS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">GYNECOLOGY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ANDROLOGY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HAIR TRANSPLANT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACTS</a>
+                  </li>
+                </ul>
+                <ul
+                  class="nav flex flex-row justify-content-start align-items-start"
+                ></ul>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="list-group-item mt-2 mx-auto"
+            >A disabled link item</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section  -->
+
+    <div
+      class="hero-video videoPlayer col-xs-8 col-xs-offset-2 embed-responsive embed-responsive-16x9"
+    >
+      <div class="overlay-content text-center align-items-end">
+        <img
+          class="mb-3"
+          src="https://static.wixstatic.com/media/2e87f1_12b615ea6a45404c9c1c9074b0e69fd4~mv2.png/v1/crop/x_5,y_0,w_1074,h_221/fill/w_1289,h_265,al_c,lg_1,q_85,enc_auto/New%252520Project%252520(2)_edited_edited_pn.png"
+          alt=""
+        />
+      </div>
+      <div class="book-btn">
+        <a href="#appointment">
+          <button type="button" class="btn rounded-0 mt-2">
+            BOOK APPOINTMENT
+          </button></a
+        >
+      </div>
+
+      <video autoplay loop muted>
+        <source
+          src="https://video.wixstatic.com/video/0c92c4_4feebaa0ab5a4858890ceef4d1c4a30b/720p/mp4/file.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <!-- stay section  -->
+
+    <div class="stay-section" id="stay">
+      <h1
+        class="mt-2 mt-md-4"
+        style="letter-spacing: 0.05em; color: rgb(202, 171, 119)"
+      >
+        Stay Young & Beautiful Forever!
+      </h1>
+      <p class="mt-3 mb-5 text-white">
+        Unveil timeless youth and lasting beauty through a comprehensive range
+        of cosmetic and wellness treatments available at Highness Clinics.
+        Established by Dr. Firas Hamdan, our clinic offers cutting-edge
+        interventions in cosmetic enhancements, dermatology, weight loss
+        solutions, and other fields. With world-renowned cosmetic surgeons on
+        board, Highness Clinics stands as the ultimate destination for restoring
+        both health and beauty across the globe.
+      </p>
+    </div>
+
+    <!-- department section  -->
+
+    <div class="mt-5 text-center department-section">
+      <h1 class="text-white mt-5">Our Departments</h1>
+
+      <div class="first-department">
+        <video
+          autoplay
+          loop
+          muted
+          src="https://video.wixstatic.com/video/11062b_62f0356712544a87b392417662c4658d/720p/mp4/file.mp4"
+        ></video>
+        <div class="content">
+          <div class="row row-cols-1 row-cols-lg-3 g-4 section">
+            <div class="col">
+              <div class="card p-0 px-md-2 py-md-5 h-100 yellow-card rounded-0">
+                <div class="card-body text-white">
+                  <div data-testid="svgRoot-comp-kgatmc1w" class="text-white">
+                    <svg
+                      preserveAspectRatio="xMidYMid meet"
+                      data-bbox="10 56 180 88"
+                      viewBox="10 56 180 88"
+                      height="100"
+                      width="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                      data-type="color"
+                      role="img"
+                      aria-label="aesthetics dermatology"
+                    >
+                      <defs>
+                        <style>
+                          #comp-kgatmc1w svg [data-color="1"] {
+                            fill: #ffffff;
+                          }
+                        </style>
+                      </defs>
+                      <g>
+                        <path
+                          d="M10 82.287l52.156-23.264s21.6-8.571 33.893 6.472c.878 1.049 2.634 1.924 3.863 1.749 1.405 0 2.634-.525 3.512-1.399 2.107-1.749 17.034-16.792 34.946-5.947L190 84.91s-82.888 134.684-180-2.623z"
+                          fill="white"
+                          data-color="1"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <h5 class="card-title my-3">AESTHETICS</h5>
+                  <p class="card-text">
+                    Discover the art of radiant skin at our leading clinic in
+                    Dubai. Our team of expert dermatologists combines science
+                    and beauty to bring you personalized treatments that enhance
+                    your natural allure.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                  <button type="button" class="btn btn-dark rounded-0">
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-0 px-md-2 py-md-5 h-100 dark-card rounded-0">
+                <div class="card-body text-white">
+                  <img
+                    src="https://static.wixstatic.com/media/6c80c2_1eeac96feffe4043baeaf97fd2e297b1~mv2.png/v1/crop/x_0,y_0,w_1300,h_858/fill/w_186,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/plastic-surgery-beauty-icons-set-cosmeti.png"
+                    alt="Dubai Plastic Surgery"
+                    style="
+                      width: 149px;
+                      height: 96px;
+                      object-fit: cover;
+                      object-position: 50% 50%;
+                    "
+                    width="149"
+                    height="96"
+                    fetchpriority="high"
+                  />
+                  <h5 class="card-title my-3">PLASTIC SURGERY</h5>
+                  <p class="card-text">
+                    We blend the artistry of surgical expertise with your
+                    personal aspirations, ensuring results that reflect your
+                    unique vision. Our skilled team of Plastic Surgeons is
+                    dedicated to delivering transformative procedures that
+                    enhance your confidence and refine your natural elegance.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0 text-white">
+                  <button type="button" class="btn rounded-0">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-0 px-md-2 py-md-5 h-100 yellow-card rounded-0">
+                <div class="card-body text-white">
+                  <img
+                    src="https://static.wixstatic.com/media/6c80c2_ee580206c7604ec1963d3830532bc9a3~mv2.png/v1/fill/w_111,h_131,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/96994749-short-hair-style-icon-logo-wome.png"
+                    alt="96994749-short-hair-style-icon-logo-wome"
+                    style="
+                      width: 89px;
+                      height: 105px;
+                      object-fit: cover;
+                      object-position: 50% 50%;
+                    "
+                    width="89"
+                    height="105"
+                    fetchpriority="high"
+                  />
+                  <h5 class="card-title my-3">SKIN CARE</h5>
+                  <p class="card-text">
+                    Indulge in the pinnacle of skincare luxury at Highness
+                    Clinics Dubai. Our dedicated skincare experts craft
+                    personalized journeys to nurture your skin's health and
+                    radiance.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                  <button type="button" class="btn btn-dark rounded-0">
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5 text-center department-section">
+      <div class="first-department">
+        <video
+          autoplay
+          loop
+          muted
+          src="https://video.wixstatic.com/video/11062b_62f0356712544a87b392417662c4658d/720p/mp4/file.mp4"
+        ></video>
+        <div class="content">
+          <div class="row row-cols-1 row-cols-lg-3 g-4 section">
+            <div class="col">
+              <div class="card p-0 px-md-2 py-md-5 h-100 yellow-card rounded-0">
+                <div class="card-body text-white">
+                  <img
+                    src="https://static.wixstatic.com/media/6c80c2_62aa80918f91497b8fbeb83d299cb04c~mv2.png/v1/fill/w_79,h_79,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Male_black_symbol_svg.png"
+                    alt="Male_black_symbol.svg.png"
+                    style="
+                      width: 63px;
+                      height: 63px;
+                      object-fit: cover;
+                      object-position: 50% 50%;
+                    "
+                    width="63"
+                    height="63"
+                    fetchpriority="high"
+                  />
+                  <h5 class="card-title my-3">ANDROLOGY</h5>
+                  <p class="card-text">
+                    Empowering male vitality and well-being, our distinguished
+                    Andrology department at Highness Clinics Dubai is a
+                    sanctuary for comprehensive men's health solutions. Our
+                    expert Andrologists provide discreet and personalized care.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                  <button type="button" class="btn btn-dark rounded-0">
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-0 px-md-2 py-md-5 h-100 dark-card rounded-0">
+                <div class="card-body text-white">
+                  <img
+                    src="https://static.wixstatic.com/media/0c92c4_8ccd77576db44013afdd0f0ebf05cc03~mv2.png/v1/fill/w_79,h_79,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/femenine_866954_edited.png"
+                    alt="femenine_866954_edited.png"
+                    style="
+                      width: 63px;
+                      height: 63px;
+                      object-fit: cover;
+                      object-position: 50% 50%;
+                    "
+                    width="63"
+                    height="63"
+                    fetchpriority="high"
+                  />
+                  <h5 class="card-title my-3">GYNECOLOGY</h5>
+                  <p class="card-text">
+                    Welcome to our esteemed Gynecology department at Highness
+                    Clinics Dubai, where women's health takes center stage. Our
+                    dedicated team of Gynecologists offers compassionate and
+                    comprehensive care, spanning from routine wellness to
+                    specialized treatments.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0 text-white">
+                  <button type="button" class="btn rounded-0">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-0 px-md-2 py-md-5 h-100 yellow-card rounded-0">
+                <div class="card-body text-white">
+                  <img
+                    src="https://static.wixstatic.com/media/604e2e_f85f896e04ac4428aa873b8b5fef209c~mv2.png/v1/fill/w_113,h_113,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/66-668001_hair-strand-png-for-kids-hair-.png"
+                    alt="66-668001_hair-strand-png-for-kids-hair-"
+                    style="
+                      width: 63px;
+                      height: 63px;
+                      object-fit: cover;
+                      object-position: 50% 50%;
+                    "
+                    width="90"
+                    height="90"
+                    fetchpriority="high"
+                  />
+                  <h5 class="card-title my-3">HAIR TRANSPLANT</h5>
+                  <p class="card-text">
+                    HAIR TRANSPLANT Rediscover confidence and a vibrant
+                    appearance with our premier Hair Transplant solutions in
+                    Dubai. Our skilled team of specialists understands the
+                    transformative power of a full head of hair, and we're
+                    dedicated to delivering natural-looking results tailored to
+                    your unique needs.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                  <button type="button" class="btn btn-dark rounded-0">
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Machines  -->
+
+    <div class="machines-contain mt-5">
+      <video
+        muted
+        loop
+        tabindex="-1"
+        autoplay
+        style="
+          width: 100%;
+          object-fit: cover;
+          object-position: center center;
+          opacity: 1;
+        "
+        class="card-img"
+        src="https://video.wixstatic.com/video/0c92c4_74752e7e1acf452380494de5268488c0/1080p/mp4/file.mp4 "
+      ></video>
+      <div class="overlay text-center text-md-start">
+        <h2 class="fw-bolder text-secondary-emphasis">OUR MACHINES</h2>
+        <p style="letter-spacing: 0.02em; font-size: 15px">
+          Experience the future of beauty and innovation at our state-of-the-art
+          clinic in Dubai. We're proud to offer an array of cutting-edge
+          cosmetic machines that harness the latest technologies to elevate your
+          aesthetic journey. From non-invasive treatments that sculpt and
+          rejuvenate to advanced laser therapies that target specific concerns
+        </p>
+        <button type="button" class="btn mx-auto fw-bold">Read More</button>
+      </div>
+    </div>
+
+    <!-- About Us  -->
+    <div class="about-contain card border-0">
+      <div class="overlay w-100 h-100 mt-5" style="height: fit-content">
+        <div
+          class="card mb-3 bg-transparent rounded-0 mx-auto my-auto"
+          style="max-width: 700px"
+        >
+          <div class="row g-0 mt-2">
+            <div class="col-12 col-md-4 text-center img-contain pl-1 pl-md-0">
+              <img
+                src="https://static.wixstatic.com/media/0c92c4_736a3fabe20a4a1ca4d3b15c86ef93d8~mv2.jpg/v1/crop/x_465,y_204,w_1066,h_1482/fill/w_274,h_381,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/DSC09277_edited.jpg"
+                class="img-fluid"
+                alt="..."
+              />
+              <div class="d-inline-block d-md-none text-start ml-auto">
+                <p class="text-white" style="letter-spacing: 8px">About</p>
+                <h4 class="card-title">Dr. Firas Hamdan</h4>
+              </div>
+            </div>
+            <div class="col-12 col-md-8">
+              <div class="card-body">
+                <h6
+                  class="text-white d-md-block d-none"
+                  style="letter-spacing: 8px"
+                >
+                  About
+                </h6>
+                <h2 class="card-title d-md-block d-none">Dr. Firas Hamdan</h2>
+                <p
+                  class="card-text text-center text-md-start text-white col-12"
+                >
+                  Highness Clinics was founded by Dr. Firas Hamdan who believes
+                  that happiness is derived from the satisfaction of staying
+                  young and beautiful forever, and this is what motivated him to
+                  pursue his career in plastic surgery and open a
+                  multi-specialty clinic featuring outstanding doctors &
+                  surgeons with a wide-range of specialties tailored to the
+                  patients needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 text-center">
+          <button type="button" class="btn btn-lg">Read More</button>
+        </div>
+      </div>
+
+      <video
+        muted
+        loop
+        tabindex="-1"
+        autoplay
+        style="
+          width: 100%;
+          object-fit: cover;
+          object-position: center center;
+          opacity: 1;
+        "
+        class="card-img"
+        src="https://video.wixstatic.com/video/2e87f1_5d23bb2490bf47be907bfe07787b80a6/1080p/mp4/file.mp4"
+      ></video>
+    </div>
+
+    <!-- Slider  -->
+
+    <div class="container swiper-contain mt-1">
+      <div class="title text-center d-none d-md-block">
+        <h2>Visit us on Social Media</h2>
+      </div>
+      <div class="text-white text-center d-block d-md-none">
+        <h3>Follow us on instagram</h3>
+      </div>
+
+      <div class="d-none d-md-flex justify-content-around mb-3">
+        <div class="d-flex justify-content-between">
+          <a href="https://www.instagram.com/highnessclinics">
+            <img
+              style="
+                border-radius: 50%;
+                font-size: calc(60px / 2);
+                width: 60px;
+                height: 60px;
+                padding: 0px 0px;
+              "
+              alt="highnessclinics Instagram page"
+              src="https://scontent-iad3-2.xx.fbcdn.net/v/t51.2885-15/328164994_1636496093449525_8430751625236473436_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=7d201b&amp;_nc_ohc=cY-ahD7yttYAX8JPUFB&amp;_nc_ht=scontent-iad3-2.xx&amp;edm=AL-3X8kEAAAA&amp;oh=00_AfCsOhkA8Zx5CMP88yHqIRjYfbMBF5w9OkT_wAMcfkTf_w&amp;oe=6546F23B"
+            />
+          </a>
+          <h3 class="text-white my-auto">highnessclinics</h3>
+        </div>
+        <div class="follow-btn my-auto">
+          <a href="https://www.instagram.com/highnessclinics">
+            <button type="button" class="btn">
+              <i class="fa-brands fa-instagram fa-lg mx-2"></i>Follow
+            </button></a
+          >
+        </div>
+      </div>
+
+      <div class="position-relative">
+        <div class="prev">
+          <svg
+            width="10"
+            height="15"
+            viewBox="0 0 10 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z"
+              fill="rgb(202, 171, 119)"
+            />
+          </svg>
+        </div>
+        <div class="next">
+          <svg
+            width="10"
+            height="15"
+            viewBox="0 0 10 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z"
+              fill="rgb(202, 171, 119)"
+            />
+          </svg>
+        </div>
+
+        <div class="swiper w-75">
+          <div class="swiper-wrapper">
+            <div class="card swiper-slide video-contain rounded-0">
+              <a href="https://www.instagram.com/reel/Cy_E3f4pq6N/">
+                <svg
+                  class="video-icon"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    d="M4 9h5.5l-3-5h-1A1.5 1.5 0 0 0 4 5.5V9Zm11.5 0H11L8 4h4.5l3 5ZM17 9l-3-5h4.5A1.5 1.5 0 0 1 20 5.5V9h-3Z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M20 10H4v8.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V10Zm-9 2.236v3.528c0 .185.185.298.328.2l2.571-1.764a.248.248 0 0 0 0-.4l-2.571-1.764c-.143-.098-.328.015-.328.2Z"
+                  ></path>
+                </svg>
+
+                <img
+                  src="https://scontent-iad3-2.cdninstagram.com/v/t51.29350-15/397284167_3482501655321263_1513007975067448973_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=p0nCsuCFQngAX87Imve&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=AEQ6tj4EAAAA&amp;oh=00_AfCwlgP2yw0UXmtz78wYfQS7RW7mHvL7zRzfXVyBDi4D6A&amp;oe=654DC964"
+                  class="card-img w-100 align-self-center rounded-0"
+                  alt="..."
+                />
+                <video autoplay loop muted class="video-slide h-100 w-100">
+                  <source
+                    src="https://scontent-iad3-2.cdninstagram.com/o1/v/t16/f1/m82/4D47193983949CB58F21B765EB3221B3_video_dashinit.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLmNsaXBzLnVua25vd24tQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSJ9&_nc_ht=scontent-iad3-2.cdninstagram.com&_nc_cat=103&vs=2642712526036298_3840091680&_nc_vs=HBksFQIYT2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfcHJvZC80RDQ3MTkzOTgzOTQ5Q0I1OEYyMUI3NjVFQjMyMjFCM192aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dGc0RyaGQ3c29zY3JJQUNBRzZGcTd0RTB6Z0xicV9FQUFBRhUCAsgBACgAGAAbAYgHdXNlX29pbAExFQAAJv6sqZagsIhAFQIoAkMzLBdAMgo9cKPXChgSZGFzaF9iYXNlbGluZV8xX3YxEQB1AAA%3D&ccb=9-4&oh=00_AfCVACca33Dv4re1O98yttZWK18RNgsM7Z4-Z83oDJkx_w&oe=654ABF3D&_nc_sid=1d576d&_nc_rid=4a36f2c3c6"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="card-img-overlay">
+                  <p class="card-text pt-3">
+                    Dr. Roy Moutran at Highness Clinics Dubai on 4th &amp;
+                    5th....
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="card swiper-slide rounded-0">
+              <a href="https://www.instagram.com/reel/CzOSAx3pfA3/">
+                <svg
+                  class="video-icon"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    d="M4 9h5.5l-3-5h-1A1.5 1.5 0 0 0 4 5.5V9Zm11.5 0H11L8 4h4.5l3 5ZM17 9l-3-5h4.5A1.5 1.5 0 0 1 20 5.5V9h-3Z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M20 10H4v8.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V10Zm-9 2.236v3.528c0 .185.185.298.328.2l2.571-1.764a.248.248 0 0 0 0-.4l-2.571-1.764c-.143-.098-.328.015-.328.2Z"
+                  ></path>
+                </svg>
+                <img
+                  src="https://scontent-iad3-2.cdninstagram.com/v/t51.29350-15/398284716_227222913544509_6263576920168705129_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=pfo8rSjACxIAX9W_Rqb&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=AEQ6tj4EAAAA&oh=00_AfBUNzB1VALsy3PNnKTRXBx6L8P8e4J4rvzqj5ef-81tVQ&oe=654DFD45"
+                  class="card-img w-100 align-self-center rounded-0"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <p class="card-text pt-3">
+                    Shall we start 🎨? The results of our endoscopic
+                    forehead.....
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="card swiper-slide rounded-0">
+              <a href="https://www.instagram.com/reel/Cy3qwVALo2B/">
+                <svg
+                  class="video-icon"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    d="M4 9h5.5l-3-5h-1A1.5 1.5 0 0 0 4 5.5V9Zm11.5 0H11L8 4h4.5l3 5ZM17 9l-3-5h4.5A1.5 1.5 0 0 1 20 5.5V9h-3Z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M20 10H4v8.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V10Zm-9 2.236v3.528c0 .185.185.298.328.2l2.571-1.764a.248.248 0 0 0 0-.4l-2.571-1.764c-.143-.098-.328.015-.328.2Z"
+                  ></path>
+                </svg>
+                <img
+                  src="https://scontent-iad3-2.cdninstagram.com/v/t51.29350-15/395592366_1874222622980827_7649670200716105988_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=8ZvYfaaTFycAX9jkeFc&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=AEQ6tj4EAAAA&oh=00_AfDGxlAWH2xzXESMvHn_VGH5oecijXEbgXAo1o9NOWwnGQ&oe=654EDA36"
+                  class="card-img w-100 align-self-center rounded-0"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <p class="card-text pt-3">
+                    Let’s see together the transformation! After a previous....
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="card swiper-slide rounded-0">
+              <a href="https://www.instagram.com/reel/CyyiRE-P54F/">
+                <svg
+                  class="video-icon"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    d="M4 9h5.5l-3-5h-1A1.5 1.5 0 0 0 4 5.5V9Zm11.5 0H11L8 4h4.5l3 5ZM17 9l-3-5h4.5A1.5 1.5 0 0 1 20 5.5V9h-3Z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M20 10H4v8.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V10Zm-9 2.236v3.528c0 .185.185.298.328.2l2.571-1.764a.248.248 0 0 0 0-.4l-2.571-1.764c-.143-.098-.328.015-.328.2Z"
+                  ></path>
+                </svg>
+                <img
+                  src="https://scontent-iad3-2.cdninstagram.com/v/t51.29350-15/394655219_372385921789790_7664547656505234238_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=I8ud5uTy2_IAX-fPOsr&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=AEQ6tj4EAAAA&oh=00_AfD8MAafqXLV8xRqlxuHCPvkzk05a7lZstUsr0SgjmDkQg&oe=654DA803"
+                  class="card-img w-100 align-self-center"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <p class="card-text pt-3">
+                    We were very pleased to have @juliahussein___ And here’s....
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="card swiper-slide video-contain rounded-0">
+              <a href="https://www.instagram.com/reel/Cx0uW2uNTWm/">
+                <svg
+                  class="video-icon"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    d="M4 9h5.5l-3-5h-1A1.5 1.5 0 0 0 4 5.5V9Zm11.5 0H11L8 4h4.5l3 5ZM17 9l-3-5h4.5A1.5 1.5 0 0 1 20 5.5V9h-3Z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M20 10H4v8.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V10Zm-9 2.236v3.528c0 .185.185.298.328.2l2.571-1.764a.248.248 0 0 0 0-.4l-2.571-1.764c-.143-.098-.328.015-.328.2Z"
+                  ></path>
+                </svg>
+                <img
+                  src="https://scontent-iad3-1.cdninstagram.com/v/t51.36329-15/384367388_671320238306895_5486662159567935274_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=sYPdEPUEgjUAX_zlZnq&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=AEQ6tj4EAAAA&oh=00_AfCc_kdAM9uHT5aAchV9PodwkIyDg-zFcu-OasT4OJ9qDA&oe=654F47CC"
+                  class="card-img w-100 align-self-center"
+                  alt="..."
+                />
+                <video autoplay loop muted class="video-slide h-100 w-100">
+                  <source
+                    src="https://scontent-iad3-2.cdninstagram.com/o1/v/t16/f1/m82/B54B2B59A8E2B169D9A2AB5FB2315E80_video_dashinit.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLmNsaXBzLnVua25vd24tQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSJ9&_nc_ht=scontent-iad3-2.cdninstagram.com&_nc_cat=100&vs=1001906144349602_2305890256&_nc_vs=HBksFQIYT2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfcHJvZC9CNTRCMkI1OUE4RTJCMTY5RDlBMkFCNUZCMjMxNUU4MF92aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dPTDB0aFpfMGM1SzhXb0RBR0pDazJKOEhSeENicV9FQUFBRhUCAsgBACgAGAAbAYgHdXNlX29pbAExFQAAJtCKr8PMqIVAFQIoAkMzLBdAQzgQYk3S8hgSZGFzaF9iYXNlbGluZV8xX3YxEQB1AAA%3D&ccb=9-4&oh=00_AfDOHZRAogw322fAF6Gm7otG9U6xAjrgDdbK5z5Be9kAzA&oe=654A4BFB&_nc_sid=1d576d&_nc_rid=bf0308fd16"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="card-img-overlay">
+                  <p class="card-text fs-5 px-1 pt-3">
+                    Highness Beauty clinics welcomes Dr.Branka Adzic....
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="card swiper-slide rounded-0">
+              <a href="https://www.instagram.com/reel/CylkyvQp7x2/">
+                <svg
+                  class="video-icon"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    d="M4 9h5.5l-3-5h-1A1.5 1.5 0 0 0 4 5.5V9Zm11.5 0H11L8 4h4.5l3 5ZM17 9l-3-5h4.5A1.5 1.5 0 0 1 20 5.5V9h-3Z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M20 10H4v8.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V10Zm-9 2.236v3.528c0 .185.185.298.328.2l2.571-1.764a.248.248 0 0 0 0-.4l-2.571-1.764c-.143-.098-.328.015-.328.2Z"
+                  ></path>
+                </svg>
+                <img
+                  src="https://scontent-iad3-2.cdninstagram.com/v/t51.29350-15/394142457_1608069966391218_2233067807464147496_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=QliuXtKb4QEAX9cQ3Wv&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=AEQ6tj4EAAAA&oh=00_AfCieEwsnxa4RPWwDDg0CupePQi5f29Y9E44QZY0GIivOQ&oe=654F09CD"
+                  class="card-img w-100 align-self-center"
+                  alt="..."
+                />
+                <div class="card-img-overlay px-1">
+                  <p class="card-text fs-5 pt-3">
+                    تتشرف عيادات هاينس دبى بانضمام أخصائى الأمراض الجلدية و
+                    التجميل الدكتور هادى....
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="card swiper-slide rounded-0">
+              <a href="https://www.instagram.com/p/Cyl6hMJy5Gx/">
+                <svg
+                  class="video-icon"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    d="M4 9h5.5l-3-5h-1A1.5 1.5 0 0 0 4 5.5V9Zm11.5 0H11L8 4h4.5l3 5ZM17 9l-3-5h4.5A1.5 1.5 0 0 1 20 5.5V9h-3Z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M20 10H4v8.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V10Zm-9 2.236v3.528c0 .185.185.298.328.2l2.571-1.764a.248.248 0 0 0 0-.4l-2.571-1.764c-.143-.098-.328.015-.328.2Z"
+                  ></path>
+                </svg>
+                <img
+                  src="https://scontent-iad3-2.cdninstagram.com/v/t51.29350-15/393138678_352941670516560_7674763190582372541_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=baZjxz3AdBcAX_Q5ZeW&_nc_oc=AQm_2lb8vCeqF1MvSxOmts3G3vUOv8pGC3wKQu9T33SCXNxuO76BIDZqps0wha3i5Ns&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=AEQ6tj4EAAAA&oh=00_AfAC9UUVXp3Teh2O0tmTjOG_GK1pKMJwQE-A55Z5xNLi1A&oe=654E8FCD"
+                  class="card-img w-100 align-self-center"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <p class="card-text pt-3">
+                    جراح التجميل الدكتور وليام وطفة في عيادات هاينس دبي 21 و 22
+                    أكتوبر Plastic....
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Book Section  -->
+    <div class="container" id="appointment">
+      <h2 class="text-center mt-5 text-white">Book Appointment</h2>
+      <h5 class="text-center mt-2 text-white">Enter Your Information</h5>
+      <form action="" class="contact-form mt-2 mx-auto text-white">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-3">
+            <label for="fullNameInput" class="form-label">Your Name</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Eg , Kat"
+              id="fullNameInput"
+              required="required"
+            />
+          </div>
+          <div class="col mb-3">
+            <label for="emailInput" class="form-label">Your Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Eg , mail@example.com"
+              id="emailInput"
+              aria-describedby="emailHelp"
+              required="required"
+            />
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-3">
+            <label for="numberInput" class="form-label">Your Phone</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Eg , 14976"
+              id="numberInput"
+              required="required"
+            />
+          </div>
+
+          <div class="col mb-3">
+            <label for="recognizeUsInput" class="form-label">Departments</label>
+            <select
+              class="form-select rounded-0"
+              aria-label="Default select example"
+              id="recognizeUsInput"
+              required="required"
+            >
+              <option class="text-warning fs-5 my-2" selected>
+                Choose a department
+              </option>
+              <option class="text-warning fs-5 my-2" value="AESTHETICS">
+                AESTHETICS
+              </option>
+              <option class="text-warning fs-5 my-2" value="PLASTIC SURGERY">
+                PLASTIC SURGERY
+              </option>
+              <option class="text-warning fs-5 my-2" value="SKIN CARE">
+                SKIN CARE
+              </option>
+              <option class="text-warning fs-5 my-2" value="ANDROLOGY">
+                ANDROLOGY
+              </option>
+              <option class="text-warning fs-5 my-2" value="GYNECOLOGY">
+                GYNECOLOGY
+              </option>
+              <option class="text-warning fs-5 my-2" value="HAIR TRANSPLANT">
+                HAIR TRANSPLANT
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="textareaInput" class="form-label">Details</label>
+          <textarea
+            class="form-control"
+            id="textareaInput"
+            rows="3"
+            placeholder="Type your message here..."
+            required="required"
+          ></textarea>
+        </div>
+
+        <div class="form-check d-flex justify-content-center">
+          <input
+            class="form-check-input mx-3"
+            type="checkbox"
+            value=""
+            id="invalidCheck"
+            required
+          />
+          <label class="form-check-label" for="invalidCheck">
+            I want to subscribe to the newsletter
+          </label>
+          <div class="invalid-feedback">You must agree before submitting.</div>
+        </div>
+
+        <button
+          class="d-flex align-items-center text-decoration-none"
+          title="Submit"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <!-- Footer  -->
+    <footer class="text-center border-top border-light mt-5 pt-5">
+      <h4 style="color: rgb(202, 171, 119); letter-spacing: 10px" class="mb-5">
+        CONTACT US
+      </h4>
+      <div class="container text-center">
+        <div class="row">
+          <div class="text-white col-12 col-md-6 col-lg-3">
+            <h2 class="footer-header">LOCATIONS</h2>
+            <p class="my-4">Ibn Zuhr Building #53 Dubai Healthcare City</p>
+          </div>
+          <div class="text-white col-12 col-md-6 col-lg-3">
+            <h2 class="footer-header">CALL</h2>
+            <p class="my-4">
+              +971 4 443 2162
+              <br />
+              +971 58 820 2456
+            </p>
+          </div>
+          <div class="text-white col-12 col-md-6 col-lg-3">
+            <h2 class="footer-header">HOURS</h2>
+            <p class="my-4">Saturday-Thursday: 10am-9pm <br />Friday: Closed</p>
+          </div>
+          <div class="text-white col-12 col-md-6 col-lg-3">
+            <h2 class="footer-header">E-MAIL</h2>
+            <p class="my-4">info@highnessclinics.ae</p>
+          </div>
+        </div>
+      </div>
+      <h4 class="text-white mt-5">Newsletter</h4>
+
+      <h4 class="text-white">Subscribe to get our latest updates</h4>
+      <form action="">
+        <div class="input-group border-0">
+          <input
+            type="text"
+            class="form-control p-3 border-0"
+            placeholder="Enter your email here*"
+            required
+          />
+
+          <button class="input-group-btn text-white" type="submit">
+            Subscribe
+          </button>
+        </div>
+      </form>
+
+      <!-- Social Icons  -->
+      <div class="flex text-white mt-5">
+        <a href="https://www.facebook.com/highnessclinics/" class="mx-2">
+          <i
+            class="fa-brands fa-facebook-f"
+            style="color: #ffffff; font-size: 25px"
+          ></i
+        ></a>
+        <a
+          href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhighnessclinics%2F"
+          class="mx-2"
+        >
+          <i
+            class="fa-brands fa-twitter"
+            style="color: #ffffff; font-size: 25px"
+          ></i
+        ></a>
+        <a href="https://www.youtube.com/c/HighnessclinicsAe" class="mx-2">
+          <i
+            class="fa-brands fa-youtube"
+            style="color: #ffffff; font-size: 25px"
+          ></i
+        ></a>
+        <a href="https://www.instagram.com/highnessclinics/" class="mx-2">
+          <i
+            class="fa-brands fa-instagram"
+            style="color: #ffffff; font-size: 25px"
+          ></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
